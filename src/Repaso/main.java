@@ -9,14 +9,13 @@ public class main {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("INGRESE N: ");
 		int n = sc.nextInt();
-		int suma = 0;
+		long factorial = 1;
 		
 		for (int i = 1; i <= n; i++) {
-			if (i % 4 == 0 ) {
-				suma += i;
+				factorial *= i;
 			}
-		}
-		System.out.println("LA SUMA DE DIVISIBLES ENTRE 4 ES: ");
+		
+		System.out.println("EL FACTORIAL DE " + n + " es: " + factorial);
 		sc.close();
 
 	}
